@@ -25,13 +25,21 @@
 
         }
 
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight:bolder ;
+            background-color: rgba(255, 127, 80, 0.997);
+        }
+
         thead, Tfoot{
-            background-color:cadetblue;
+            background-color:rgba(158, 97, 28, 0.596);
             color:white;
         }
 
         td.num{
             text-align: right;
+         
         }
     </style>
 </head>
@@ -54,8 +62,8 @@
        <Thead>
 
            <TR>
-             <TH>Estado</TH>
-             <TH>População</TH>
+             <TH scope="col">Estado</TH>
+             <TH scope="col" style="width: 50px;">População</TH>
 
            </TR>
        </Thead>
@@ -199,7 +207,7 @@
 
        <tfoot>
            <TR>
-             <TH>Total de Habitantes</TH>
+             <TH scope="row">Total de Habitantes</TH>
              <TD class="num"><strong>203 062 512</strong></TD>
 
            </TR>
@@ -207,7 +215,7 @@
 
        </tfoot>
 
-
+      <caption>População das Unidades Federativa </caption>
 
     </table>
 
