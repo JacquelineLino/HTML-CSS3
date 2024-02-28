@@ -13,29 +13,59 @@
 
         table{
 
-            width: 500px;
+            width:500px;
             border-collapse:collapse;
         }
 
         td, th{
 
-            border: 1px solid rgb(56, 55, 55);
+            border: 1px solid rgba(56, 55, 55, 0.26);
             padding: 10px;
-        
-
         }
-
+            th{
+                width:50px;
+            }
+        
         caption{
             font-size: 1.5em;
             padding: 10px;
             font-weight:bolder ;
-            background-color: rgba(255, 127, 80, 0.997);
+            background-color: #E6F0AF ;
         }
 
         thead, Tfoot{
-            background-color:rgba(158, 97, 28, 0.596);
+            background-color:#4A3A47;
             color:white;
         }
+
+        /*  Zebrando a tabela com nth-child(2n) par ,  nth-child(2n-1) impar, nth-child(odd) impar, nth-child(even) par 
+        
+        exemplo:  tbody > tr:nth-child(2n){ 
+                    background-color: lightgray;
+                   }
+                    tbody > tr:nth-child(2n-1){
+                    background-color: white;
+                   }
+        
+               ou 
+                tbody > tr:nth-child(odd){
+                    background-color: lightgray;
+                   }
+                    tbody > tr:nth-child(even){
+                    background-color: white;
+                   }
+        */
+
+
+        tbody > tr:nth-child(odd){
+                    background-color: white;
+                    font-weight: bold;
+                   }
+
+         tbody > tr:nth-child(even){
+                    background-color: #E8ED76;
+                    text-decoration: underline;
+                   }
 
         td.num{
             text-align: right;
