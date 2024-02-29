@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela </title>
+
+    <style>
+        body{
+            width: 800px;
+            height: 500px;
+            margin-left:20px;
+            padding-left: 30px;
+            margin:auto;
+        
+            
+ 
+        .container{
+            background-image:linear-gradient(to right top, red, white,pink);
+            border: 1px solid green;
+            padding: 50px;
+
+        }
+     
+        }
+        table{
+            width: 400px;
+            border-collapse:collapse;
+          margin: auto;
+          
+        }
+
+        caption{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:25px;
+            font-weight:bolder;
+        }
+
+        tr, th, td{
+            border: 1px solid black;
+            text-align: center;
+            font-size:18px;
+        }
+
+        col.cnome{
+         
+             background-color: aqua;
+        }
+        col.cgroup{
+          background-image:linear-gradient(to left bottom, blue,white,violet);
+            color:white
+        }
+
+        col.cprof{
+            background-image:linear-gradient(to right top,yellow, white, orange);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    
+        <table>
+            <colgroup>
+                <!-- <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">         -->
+    
+                <col class="cnome">
+                <col class="cgroup" span="2">
+                <col class="cprof">
+    
+            </colgroup>
+    
+            <caption>Cadastro</caption>
+    
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Profissão</th>
+            </tr>
+    
+            <tr>
+              <td>Patrick</td>
+              <td>M</td>
+              <td>45</td>
+              <td>Jornalista</td>
+    
+            </tr>
+    
+            <tr>
+    
+                <td>Alice</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Professor</td>
+            </tr>
+    
+            <tr>
+    
+                <td>Lucas</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Advogado</td>
+            </tr>
+    
+            <tr>
+                <td>Marian</td>
+                <td>F</td>
+                <td>40</td>
+                <td>Professora</td>
+            </tr>
+    
+            <tr>
+                <td>Naiara</td>
+                <td>F</td>
+                <td>50</td>
+                <td>Engenheira</td>
+            </tr>
+    
+            <tr>
+                <td>Isac</td>
+                <td>M</td>
+                <td>36</td>
+                <td>Médico</td>
+            </tr>
+    
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Enfermeiro</td>
+            </tr>
+    
+            <tr>
+    
+                <td>Jessica</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Estudante</td>
+            </tr>
+    
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Militar</td>
+            </tr>
+            <tr>
+    
+                <td>Julio</td>
+                <td>M</td>
+                <td>50</td>
+                <td>Presidiário</td>
+            </tr>
+    
+            <tr>
+                <td>Suelen</td>
+                <td>F</td>
+                <td>38</td>
+                <td>Costureira</td>
+            </tr>
+    
+            <tr>
+                <td>Sulamita</td>
+                <td>F</td>
+                <td>50</td>
+                <td>Faxineira</td>
+            </tr>
+    
+            <tr>
+                <td>Roseli</td>
+                <td>F</td>
+                <td>56</td>
+                <td>Desempregada</td>
+            </tr>
+    
+            <tr>
+                <td>Kiko</td>
+                <td>M</td>
+                <td>43</td>
+                <td>Presidiário</td>
+            </tr>
+    
+            <tr>
+                <td>Sandro</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Catador de lixo</td>
+            </tr>
+    
+            <tr>
+                <td>Eduardo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Empresário</td>
+            </tr>
+    
+            <tr>
+                <td>Fabiola</td>
+                <td>F</td>
+                <td>43</td>
+                <td>Domestica</td>
+            </tr>
+        </table>
+    
+</div>
+</body>
+</html>
